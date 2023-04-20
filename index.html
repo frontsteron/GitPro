@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Калькулятор</title>
-    <script src="calculator.js"></script>
+    <script src="calculator.js" defer></script>
   </head>
   <body style="background-color: blanchedalmond;"></body>
-    <input id="num1" type="text"> 
+    <input id="num1" type="number" step="0.001">
     <select id="operator">
       <option value="+">+</option>
       <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
     </select>
-    <input id="num2" type="text">
+    <input id="num2" type="number" step="0.001">
     <button onclick="calculate()">=</button>
     <input id="result" type="text" readonly>
   </body>
